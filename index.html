@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Grand Canyon Hangout — 1000 Piece Puzzle Night</title>
+<meta name="description" content="Four shooting stars, one canyon, a thousand pieces. A small monument to a good night." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Special+Elite&family=VT323&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <header class="hero">
+    <div class="hero-grain"></div>
+    <div class="hero-inner">
+      <p class="kicker">Volume I &middot; A Hangout In Pieces</p>
+      <h1>The Grand Canyon<br/><span class="ampersand">&amp;</span> The Thousand Pieces</h1>
+      <p class="subtitle">One puzzle. One table. Four shooting stars.</p>
+      <div class="badge">
+        <span>Est. <span id="year-stamp">2026</span></span>
+        <span class="dot">&bull;</span>
+        <span>1000 / 1000</span>
+        <span class="dot">&bull;</span>
+        <span>Earth Toned, Sky Lit</span>
+      </div>
+    </div>
+    <div class="canyon">
+      <div class="layer l1"></div>
+      <div class="layer l2"></div>
+      <div class="layer l3"></div>
+      <div class="layer l4"></div>
+      <div class="sun"></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel parchment">
+      <h2>A small monument.</h2>
+      <p>
+        We sat down with a thousand cardboard pieces and a picture of the canyon, and somewhere
+        between the rim and the river we found the hours had gotten away from us. This page is
+        a quiet thank you for that. For the snacks, for the squinting, for the one piece that
+        was definitely missing until somebody found it under a coaster.
+      </p>
+      <p class="quiet">Hang it on the wall of the internet. It belongs there.</p>
+    </section>
+
+    <section class="panel stars-panel">
+      <h2>The Four Shooting Stars</h2>
+      <p class="quiet center">Tap a star. They move when you say their name.</p>
+      <div class="cards">
+        <article class="card" data-name="Star One">
+          <div class="card-star">&#10022;</div>
+          <h3>Star One</h3>
+          <p>Carried the corner pieces. Refused to give up on the sky.</p>
+        </article>
+        <article class="card" data-name="Star Two">
+          <div class="card-star">&#10022;</div>
+          <h3>Star Two</h3>
+          <p>Sorted by color, then by vibe. Found the missing piece.</p>
+        </article>
+        <article class="card" data-name="Star Three">
+          <div class="card-star">&#10022;</div>
+          <h3>Star Three</h3>
+          <p>Brought the snacks. Brought the music. Brought the calm.</p>
+        </article>
+        <article class="card" data-name="Star Four">
+          <div class="card-star">&#10022;</div>
+          <h3>Star Four</h3>
+          <p>The river. The patience. The last piece.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel donation">
+      <div class="ribbon">A Small Donation, Lovingly Decorative</div>
+      <h2>Tip the Puzzle Jar</h2>
+      <p>
+        The jar is symbolic. The gratitude is real. If you ever want to throw a few coins at the next
+        puzzle night, the snacks fund opens here. (Buttons are decoration, not commerce.)
+      </p>
+      <div class="jar">
+        <div class="jar-glass">
+          <div class="coin c1">&cent;</div>
+          <div class="coin c2">&cent;</div>
+          <div class="coin c3">&cent;</div>
+          <div class="coin c4">&cent;</div>
+          <div class="coin c5">&cent;</div>
+        </div>
+        <div class="jar-label">SNACKS &amp; PIECES</div>
+      </div>
+      <div class="tip-row">
+        <button class="tip-btn" data-amount="1">$1 &mdash; A Single Piece</button>
+        <button class="tip-btn" data-amount="5">$5 &mdash; A Corner Set</button>
+        <button class="tip-btn" data-amount="20">$20 &mdash; The Sky</button>
+        <button class="tip-btn" data-amount="100">$100 &mdash; The Whole Canyon</button>
+      </div>
+      <p id="tip-status" class="quiet center" aria-live="polite">&nbsp;</p>
+    </section>
+
+    <section class="panel gratitude">
+      <h2>With deep appreciation.</h2>
+      <p class="big-quote">
+        &ldquo;A puzzle is just a slow conversation with the people you love.&rdquo;
+      </p>
+      <p class="signoff">&mdash; the table, after the last piece</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with earth tones, gentle starlight, and gratitude for four humans.</p>
+    <p class="quiet">No pieces were harmed. Some were briefly lost.</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -10,8 +10,10 @@
   let shootingStars = [];
 
   function resize() {
-    w = window.innerWidth;
-    h = window.innerHeight;
+    const parent = canvas.parentElement || document.body;
+    const rect = parent.getBoundingClientRect();
+    w = rect.width;
+    h = rect.height;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     canvas.style.width = w + "px";

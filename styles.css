@@ -108,9 +108,20 @@ body::before {
   font-family: "Special Elite", monospace;
   font-size: clamp(1rem, 2vw, 1.4rem);
   color: var(--yellow);
-  margin: 0;
+  margin: 0 0 0.4rem;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   letter-spacing: 0.05em;
+}
+
+.when {
+  font-family: "VT323", monospace;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--cream);
+  margin: 0;
+  opacity: 0.8;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* ---------- MAIN ---------- */

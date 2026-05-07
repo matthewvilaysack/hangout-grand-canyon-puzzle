@@ -11,11 +11,12 @@
 <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
+
   <header class="hero">
-    <canvas id="stars"></canvas>
-    <div class="hero-grain"></div>
+    <img class="hero-photo" src="./img/dusk-bay.jpg" alt="" loading="eager" />
+    <div class="grain"></div>
     <div class="hero-inner">
-      <p class="kicker">Volume I &middot; A Hangout In Pieces</p>
+      <p class="kicker">Vol. I &middot; A Hangout In Pieces</p>
       <h1>The Grand Canyon<br/><span class="ampersand">&amp;</span> The Thousand Pieces</h1>
       <p class="subtitle">One puzzle. One table. Four shooting stars.</p>
       <div class="badge">
@@ -26,51 +27,91 @@
         <span>Earth Toned, Sky Lit</span>
       </div>
     </div>
-    <div class="canyon">
-      <div class="layer l1"></div>
-      <div class="layer l2"></div>
-      <div class="layer l3"></div>
-      <div class="layer l4"></div>
-      <div class="sun"></div>
-    </div>
   </header>
 
   <main>
+
     <section class="panel parchment">
       <h2>A small monument.</h2>
       <p>
         We sat down with a thousand cardboard pieces and a picture of the canyon, and somewhere
-        between the rim and the river we found the hours had gotten away from us. This page is
-        a quiet thank you for that. For the snacks, for the squinting, for the one piece that
-        was definitely missing until somebody found it under a coaster.
+        between the rim and the river the hours got away from us. This page is just a quiet
+        thank you for the snacks, the squinting, the one piece that was definitely missing
+        until somebody found it under a coaster.
       </p>
       <p class="quiet">Hang it on the wall of the internet. It belongs there.</p>
+    </section>
+
+    <section class="filmstrip">
+      <figure class="poly p1">
+        <img src="./img/sunset-orange.jpg" alt="" loading="lazy" />
+        <figcaption>golden hour, no agenda</figcaption>
+      </figure>
+      <figure class="poly p2">
+        <img src="./img/umbrella-sunset.jpg" alt="" loading="lazy" />
+        <figcaption>the sky did this on its own</figcaption>
+      </figure>
+      <figure class="poly p3">
+        <img src="./img/pink-beach.jpg" alt="" loading="lazy" />
+        <figcaption>four little silhouettes</figcaption>
+      </figure>
+      <figure class="poly p4">
+        <img src="./img/flower-path.jpg" alt="" loading="lazy" />
+        <figcaption>the way back, full of pieces</figcaption>
+      </figure>
     </section>
 
     <section class="panel stars-panel">
       <h2>The Four Shooting Stars</h2>
       <p class="quiet center">Tap a star. They move when you say their name.</p>
       <div class="cards">
-        <article class="card" data-name="Star One">
-          <div class="card-star">&#10022;</div>
-          <h3>Star One</h3>
-          <p>Carried the corner pieces. Refused to give up on the sky.</p>
+
+        <article class="card" data-name="Star One" style="--card-photo: url('./img/green-mountains.jpg')">
+          <div class="card-photo"></div>
+          <div class="card-body">
+            <div class="card-star">&#10022;</div>
+            <h3>Star One</h3>
+            <p>Carried the corner pieces. Refused to give up on the sky.</p>
+          </div>
         </article>
-        <article class="card" data-name="Star Two">
-          <div class="card-star">&#10022;</div>
-          <h3>Star Two</h3>
-          <p>Sorted by color, then by vibe. Found the missing piece.</p>
+
+        <article class="card" data-name="Star Two" style="--card-photo: url('./img/golden-leak.jpg')">
+          <div class="card-photo"></div>
+          <div class="card-body">
+            <div class="card-star">&#10022;</div>
+            <h3>Star Two</h3>
+            <p>Sorted by color, then by vibe. Found the missing piece.</p>
+          </div>
         </article>
-        <article class="card" data-name="Star Three">
-          <div class="card-star">&#10022;</div>
-          <h3>Star Three</h3>
-          <p>Brought the snacks. Brought the music. Brought the calm.</p>
+
+        <article class="card" data-name="Star Three" style="--card-photo: url('./img/pastel-beach.jpg')">
+          <div class="card-photo"></div>
+          <div class="card-body">
+            <div class="card-star">&#10022;</div>
+            <h3>Star Three</h3>
+            <p>Brought the snacks. Brought the music. Brought the calm.</p>
+          </div>
         </article>
-        <article class="card" data-name="Star Four">
-          <div class="card-star">&#10022;</div>
-          <h3>Star Four</h3>
-          <p>The river. The patience. The last piece.</p>
+
+        <article class="card" data-name="Star Four" style="--card-photo: url('./img/copper-splash.jpg')">
+          <div class="card-photo"></div>
+          <div class="card-body">
+            <div class="card-star">&#10022;</div>
+            <h3>Star Four</h3>
+            <p>The river. The patience. The last piece.</p>
+          </div>
         </article>
+
+      </div>
+    </section>
+
+    <section class="parallax" style="background-image: url('./img/yellow-window.jpg');">
+      <div class="grain"></div>
+      <div class="parallax-overlay">
+        <p class="big-quote">
+          &ldquo;A puzzle is just a slow conversation with the people you love.&rdquo;
+        </p>
+        <p class="signoff">&mdash; the table, after the last piece</p>
       </div>
     </section>
 
@@ -78,8 +119,8 @@
       <div class="ribbon">A Small Donation, Lovingly Decorative</div>
       <h2>Tip the Puzzle Jar</h2>
       <p>
-        The jar is symbolic. The gratitude is real. If you ever want to throw a few coins at the next
-        puzzle night, the snacks fund opens here. (Buttons are decoration, not commerce.)
+        The jar is symbolic. The gratitude is real. If you ever want to throw a few coins at the
+        next puzzle night, the snacks fund opens here. (Buttons are decoration, not commerce.)
       </p>
       <div class="jar">
         <div class="jar-glass">
@@ -100,13 +141,15 @@
       <p id="tip-status" class="quiet center" aria-live="polite">&nbsp;</p>
     </section>
 
-    <section class="panel gratitude">
-      <h2>With deep appreciation.</h2>
-      <p class="big-quote">
-        &ldquo;A puzzle is just a slow conversation with the people you love.&rdquo;
-      </p>
-      <p class="signoff">&mdash; the table, after the last piece</p>
+    <section class="closer" style="background-image: url('./img/green-mountains.jpg');">
+      <div class="grain"></div>
+      <canvas id="stars"></canvas>
+      <div class="closer-inner">
+        <h2>With deep appreciation.</h2>
+        <p class="closer-line">For the four humans who made it a night.</p>
+      </div>
     </section>
+
   </main>
 
   <footer>
